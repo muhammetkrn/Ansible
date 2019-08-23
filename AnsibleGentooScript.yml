@@ -1,0 +1,10 @@
+---
+-  hosts: GentooDeneme
+   tasks:
+    - name: Install Gentoo
+      copy:
+        src: /home/muhammet/GentooSetupScript.sh #directory where GentooSetupScript.sh file is located
+        dest: /root
+        mode: 0777
+    - name: execute script
+      command: sh /root/GentooSetupScript.sh
