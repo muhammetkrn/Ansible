@@ -4,7 +4,7 @@
     - name: Install Gentoo
       copy:
         src: /home/muhammet/GentooSetupScript.sh #directory where GentooSetupScript.sh file is located
-        dest: /root
+        dest: /tmp
         mode: 0777
     - name: execute script
       command: sh /root/GentooSetupScript.sh
